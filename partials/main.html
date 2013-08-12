@@ -1,0 +1,26 @@
+<div class="row-fluid text-center">
+	<div class="lead" collapse="alphaRegister.email.$valid && alphaRegister.$dirty" ng-bind-html-unsafe="site.benefits"></div>
+</div>
+<div class="row-fluid text-center">
+	
+		<div collapse="site.r">
+			<button class="btn btb-large btn-primary bigbtn" ng-click="site.r=!site.r">Request Private Alpha</button>
+		</div>
+		<div collapse="!site.r" ng-show="requestshow">
+			<form name="alphaRegister">
+				<input type="email" placeholder="Enter Your Email" ng-model="data.email" name="email" class="span6"  required/>
+				<input type="text" placeholder="Enter Your Name" ng-model="data.name" name="name" class="span6"  required/>
+			</form>
+		</div>
+		<div class="center" ng-show="requestshow">
+			<button ng-click="process()" ng-show="alphaRegister.email.$valid && alphaRegister.$dirty" class="btn btn-large btn-primary span4" style="float:none;margin-left: auto; margin-right: auto; ">Request</button>
+		</div>
+		<div ng-show="alphaRegister.email.$invalid && alphaRegister.$dirty">Please Enter Your Email</div>
+		
+</div>		
+<div class="row-fluid text-center">
+	<h4>{{status}}</h4>
+</div>
+<div class="row-fluid text-center">
+	<div class="description" collapse="alphaRegister.email.$invalid && alphaRegister.$pristine">{{site.description}}</div>
+</div>

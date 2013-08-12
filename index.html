@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="DESECULARIZE-SITE">
+	<head>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script type="text/javascript" src="ui-bootstrap-tpls-0.3.0.min.js"></script>
+		<script src="app.js"></script>
+		<script src="controllers.js"></script>
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+		<link href="app.css" rel="stylesheet">
+		<link rel="image_src" href="desecularize_logo_icon.png" />
+		<meta property="og:description" content="deSECULARIZE hides all the secular content from your Facebook and Twitter feed!" />
+		<meta property="fb:admins" content="685951560"/>
+		<meta property="og:image" content="http://desecularize.com/desecularize_logo_icon.png" /> 
+		<title>deSECULARIZE | APP</title>
+	</head>
+	<body class="container-fluid" >
+		<div class="text-center row-fluid">
+			<img src="desecularize_logo_big.png"  />
+		</div>
+		<div ng-view></div>
+	</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43106227-1', 'desecularize.com');
+  ga('send', 'pageview');
+
+</script>
+</html>
