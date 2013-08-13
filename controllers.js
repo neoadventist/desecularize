@@ -5,7 +5,14 @@ app.controller('main', function ($scope, $timeout,$http,$filter) {
 	var date = $filter('date')(new Date(), 'M/d/yy h:mm:ss a');
 	$scope.data = {email:"",name:"",lang:language,browser:browswer,dateTime:date};
 	$scope.site = {}; 
-	$scope.site.benefits='<ul>	<li>Hide all of the secular material on your Facebook/Twitter Feeds</li>	<li>Cut through the noise to see what is important in life</li>	<li>See only religious material, perfect for Sabbath</li>	<li>Teach Facebook to show you content that is important to you</li> <li>Discover status updates from old friends</li>	</ul>';
+	$scope.site.benefits="<ul>"	
+		+"<li>Hide all of the secular material on your Facebook/Twitter Feeds</li>"
+		+"<li>Cut through the noise to see what is important in life</li>"	
+		+"<li>See only religious material, perfect for Sabbath</li>"	
+		+"<li>Teach Facebook to show you content that is important to you</li>" 
+		+"<li>Discover status updates from old friends</li>"	
+		+"<li><b>Made by and For People who do not mind being called RELIGIOUS</b></li>"
+		+"</ul>";
 	$scope.site.description = "deSECULARIZE your Facebook and Twitter feeds to let you focus on what really matters...your relationship with Jesus Christ and the Salvation of others.";
 
 	$scope.site.r=false;
